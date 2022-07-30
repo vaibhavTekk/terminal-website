@@ -2,18 +2,19 @@ import React, { useContext } from "react";
 import { HistoryContext } from "../utils/HistoryProvider";
 
 function History() {
-  const { history, setHistory } = useContext(HistoryContext);
-  console.log(history);
+  const { history } = useContext(HistoryContext);
   return (
     <div>
       {history.map((e) => {
         return (
-          <>
-            <span>guest@vaibhavtekk.tech$ ~ {e.command}</span>
+          <div key={e.date} className="whitespace-pre-wrap">
+            <span>
+              <span className="text-green-400">guest@vaibhavtekk.tech</span>:<span className="text-blue-400">~</span>${" "}
+              {e.command}
+            </span>
             <br />
-            <span>{e.output}</span>
-            <br />
-          </>
+            {e.output}
+          </div>
         );
       })}
     </div>

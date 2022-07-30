@@ -1,3 +1,10 @@
 @tailwind base;
 @tailwind utilities;
 @tailwind components;
+
+@layer base {
+  body {
+    @apply bg-zinc-900;
+    @apply text-gray-50;
+  }
+}

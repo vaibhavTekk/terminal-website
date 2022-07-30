@@ -1,5 +1,6 @@
 import React, { useState, useContext } from "react";
 import { HistoryContext } from "../utils/HistoryProvider";
+import checkCommand from "../utils/Commands";
 
 function Input() {
   const [input, setInput] = useState("");
@@ -8,17 +9,24 @@ function Input() {
   function onSubmit(e) {
     if (e.key === "Enter") {
       e.preventDefault();
-      const historyPayload = { date: new Date(), command: input, output: "PlaceHolder Output" };
-      setHistory([...history, historyPayload]);
+      if (input === "clear") {
+        setHistory([]);
+      } else {
+        const historyPayload = { date: new Date(), command: input, output: checkCommand(input) };
+        setHistory([...history, historyPayload]);
+      }
       setInput("");
     }
   }
   return (
     <div className="inline">
-      <span>guest@vaibhavtekk.tech$ ~ </span>
+      <span>
+        <span className="text-green-400">guest@vaibhavtekk.tech</span>:<span className="text-blue-400">~</span>
+        <span>$</span>{" "}
+      </span>
       <input
         type="textarea"
-        className="inline focus:outline-none"
+        className="inline focus:outline-none bg-inherit w-1/2"
         value={input}
         onChange={(e) => setInput(e.target.value)}
         onKeyDown={onSubmit}
@@ -26,6 +34,12 @@ function Input() {
         autoComplete="off"
         autoCorrect="off"
         autoCapitalize="off"
+        onBlur={(e) => {
+          e.target.focus();
+        }}
+        onLoad={(e) => {
+          e.target.focus();
+        }}
       />
     </div>
   );
