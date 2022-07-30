@@ -1,11 +1,15 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
+import { HistoryContext } from "../utils/HistoryProvider";
 
 function Input() {
   const [input, setInput] = useState("");
+  const { history, setHistory } = useContext(HistoryContext);
+
   function onSubmit(e) {
     if (e.key === "Enter") {
       e.preventDefault();
-      console.log(input);
+      const historyPayload = { date: new Date(), command: input, output: "PlaceHolder Output" };
+      setHistory([...history, historyPayload]);
       setInput("");
     }
   }

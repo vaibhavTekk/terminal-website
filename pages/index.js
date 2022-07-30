@@ -1,6 +1,7 @@
 import Head from "next/head";
 import History from "../components/History";
 import Input from "../components/Input";
+import { HistoryProvider } from "../utils/HistoryProvider";
 
 export default function Home() {
   return (
@@ -12,8 +13,10 @@ export default function Home() {
       </Head>
 
       <main className="flex flex-col h-screen font-mono">
-        <History />
-        <Input />
+        <HistoryProvider>
+          <History />
+          <Input />
+        </HistoryProvider>
       </main>
     </div>
   );
