@@ -5,7 +5,7 @@ import { HistoryProvider } from "../utils/HistoryProvider";
 
 export default function Home() {
   return (
-    <div className="bg-zinc-900 text-gray-50 p-4">
+    <div className="p-4">
       <Head>
         <title>vaibhavTekk</title>
         <meta name="description" content="Terminal Website" />
