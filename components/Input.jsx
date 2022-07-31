@@ -5,8 +5,11 @@ import checkCommand from "../utils/Commands";
 function Input() {
   const [input, setInput] = useState("");
   const { history, setHistory } = useContext(HistoryContext);
+  const [commandList, setCommandList] = useState([]);
+  const [commandIndex, setCommandIndex] = useState(0);
 
   function onSubmit(e) {
+    console.log(e.key);
     if (e.key === "Enter") {
       e.preventDefault();
       if (input === "clear") {
@@ -14,8 +17,34 @@ function Input() {
       } else {
         const historyPayload = { date: new Date(), command: input, output: checkCommand(input) };
         setHistory([...history, historyPayload]);
+        setCommandList([...commandList, input]);
+        setCommandIndex(commandList.length);
       }
       setInput("");
+    }
+
+    if (e.key === "ArrowUp") {
+      e.preventDefault();
+      if (commandIndex > 0) {
+        setInput(commandList.at(commandIndex));
+        setCommandIndex(commandIndex - 1);
+      } else if (commandIndex === 0) {
+        setInput(commandList.at(commandIndex));
+      } else {
+        setInput("");
+      }
+    }
+
+    if (e.key === "ArrowDown") {
+      e.preventDefault();
+      if (commandIndex < commandList.length) {
+        setInput(commandList.at(commandIndex));
+        setCommandIndex(commandIndex + 1);
+      } else if (commandIndex === commandList.length) {
+        setInput(commandList.at(commandIndex));
+      } else {
+        setInput("");
+      }
     }
   }
   return (
