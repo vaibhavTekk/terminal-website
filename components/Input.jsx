@@ -13,6 +13,7 @@ function Input() {
       const historyPayload = { date: new Date(), command: "header", output: checkCommand("header") };
       setHistory([...history, historyPayload]);
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   function onSubmit(e) {
