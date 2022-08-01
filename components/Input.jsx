@@ -1,4 +1,4 @@
-import React, { useState, useContext } from "react";
+import React, { useState, useContext, useEffect } from "react";
 import { HistoryContext } from "../utils/HistoryProvider";
 import checkCommand from "../utils/Commands";
 
@@ -8,8 +8,14 @@ function Input() {
   const [commandList, setCommandList] = useState([]);
   const [commandIndex, setCommandIndex] = useState(0);
 
+  useEffect(() => {
+    if (history.length === 0) {
+      const historyPayload = { date: new Date(), command: "header", output: checkCommand("header") };
+      setHistory([...history, historyPayload]);
+    }
+  }, []);
+
   function onSubmit(e) {
-    console.log(e.key);
     if (e.key === "Enter") {
       e.preventDefault();
       if (input === "clear") {

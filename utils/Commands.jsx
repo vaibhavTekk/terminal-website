@@ -4,6 +4,14 @@ const notFound = (
   </p>
 );
 
+const header = (
+  <p>
+    Hello Stalker ! 👋 <br />
+    Welcome to my Terminal Portfolio <br />
+    Use command <span className="text-red-400">help</span> to get list of available commands
+  </p>
+);
+
 const about = (
   <p>
     Hi👋! I&apos;m
@@ -182,6 +190,9 @@ export default function checkCommand(input) {
       break;
     case "help":
       return help;
+      break;
+    case "header":
+      return header;
       break;
     case "links":
       return links;

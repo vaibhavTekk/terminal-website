@@ -1,8 +1,10 @@
-import React, { useContext, useState } from "react";
+import React, { useContext, useEffect } from "react";
+
 import { HistoryContext } from "../utils/HistoryProvider";
 
 function History() {
   const { history } = useContext(HistoryContext);
+
   return (
     <div>
       {history.map((e) => {
