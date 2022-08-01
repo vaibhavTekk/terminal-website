@@ -50,7 +50,8 @@ function Input() {
   return (
     <div className="inline">
       <span>
-        <span className="text-green-400">guest@vaibhavtekk.tech</span>:<span className="text-blue-400">~</span>
+        <span className="text-andromedagreen">guest@vaibhavtekk.tech</span>:
+        <span className="text-andromedacyan">~</span>
         <span>$</span>{" "}
       </span>
       <input

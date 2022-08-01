@@ -4,7 +4,18 @@
 
 @layer base {
   body {
-    @apply bg-zinc-900;
-    @apply text-gray-50;
+    @apply bg-andromedablack;
+    @apply text-andromedaforeground;
   }
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 50px;
+}
+
+::-webkit-scrollbar-thumb {
+  height: 50%;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.1);
 }

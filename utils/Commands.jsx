@@ -7,17 +7,18 @@ const notFound = (
 const about = (
   <p>
     Hi👋! I&apos;m
-    <span className="font-semibold text-cyan-400"> Vaibhav Tekkalur </span>
+    <span className="font-semibold text-andromedacyan"> Vaibhav Tekkalur </span>
     <br />
     I&apos;m a passionate programmer by day movie buff by night.
     <br />
     Currently in my sophomore year pursuing{" "}
-    <span className="text-yellow-300">Computer Science and Engineering at VIT Chennai.</span>
+    <span className="text-andromedayellow">Computer Science and Engineering at VIT Chennai.</span>
     <br />
-    Interested in <span className="text-green-400">Full Stack Web Development</span>
+    Interested in <span className="text-andromedagreen">Full Stack Web Development</span>
     <br />
-    Currently Learning <span className="text-cyan-400">React</span>, <span className="text-zinc-400">NextJS</span> and
-    <span className="text-blue-400"> Typescript</span>
+    Currently Learning <span className="text-andromedacyan">React</span>,{" "}
+    <span className="text-andromedawhite">NextJS</span> and
+    <span className="text-andromedablue"> Typescript</span>
   </p>
 );
 
@@ -25,40 +26,40 @@ const skills = (
   <p>
     <span className="font-semibold">Programming Languages:</span>
     <br />
-    <ul className="flex flex-row gap-4">
-      <li className="px-1 text-gray-800 bg-yellow-200">Python</li>
-      <li className="px-1 text-gray-800 bg-blue-400">C</li>
-      <li className="px-1 text-gray-800 bg-blue-400">C++</li>
-      <li className="px-1 text-gray-800 bg-yellow-200">JavaScript</li>
+    <ul className="flex flex-row gap-4 underline">
+      <li className="px-1">Python</li>
+      <li className="px-1">C</li>
+      <li className="px-1">C++</li>
+      <li className="px-1">JavaScript</li>
     </ul>
     <span className="font-semibold">Web Development</span>
     <br />
     Frontend:
-    <ul className="flex flex-row gap-4">
-      <li className="px-1 text-gray-800 bg-orange-300">HTML</li>
-      <li className="px-1 text-gray-800 bg-blue-400">CSS</li>
-      <li className="px-1 text-gray-800 bg-cyan-400">TailwindCSS</li>
-      <li className="px-1 text-gray-800 bg-yellow-200">Javascript</li>
-      <li className="px-1 text-gray-800 bg-cyan-400">React</li>
-      <li className="px-1 text-gray-800 bg-purple-400">Redux</li>
+    <ul className="flex flex-row gap-4 underline">
+      <li className="px-1">HTML</li>
+      <li className="px-1">CSS</li>
+      <li className="px-1">TailwindCSS</li>
+      <li className="px-1">Javascript</li>
+      <li className="px-1">React</li>
+      <li className="px-1">Redux</li>
     </ul>
     Backend:
-    <ul className="flex flex-row gap-4">
-      <li className="px-1 text-gray-800 bg-green-400">NodeJS</li>
-      <li className="px-1 text-gray-800 bg-gray-100">ExpressJS</li>
-      <li className="px-1 text-gray-800 bg-purple-400">JWT</li>
-      <li className="px-1 text-gray-800 bg-gray-100">NextJS</li>
-      <li className="px-1 text-gray-800 bg-green-400">MongoDB</li>
+    <ul className="flex flex-row gap-4 underline">
+      <li className="px-1">NodeJS</li>
+      <li className="px-1">ExpressJS</li>
+      <li className="px-1">JWT</li>
+      <li className="px-1">NextJS</li>
+      <li className="px-1">MongoDB</li>
     </ul>
     <span className="font-semibold">Tools:</span>
     <br />
-    <ul className="flex flex-row gap-4">
-      <li className="px-1 text-gray-800 bg-cyan-400">VSCode</li>
-      <li className="px-1 text-gray-800 bg-orange-300">Git</li>
-      <li className="px-1 text-gray-800 bg-gray-100">Vercel</li>
-      <li className="px-1 text-gray-800 bg-orange-300">Figma</li>
-      <li className="px-1 text-gray-800 bg-purple-400">Adobe Premiere Pro</li>
-      <li className="px-1 text-gray-800 bg-blue-400">Adobe Photoshop</li>
+    <ul className="flex flex-row gap-4 underline">
+      <li className="px-1">VSCode</li>
+      <li className="px-1">Git</li>
+      <li className="px-1">Vercel</li>
+      <li className="px-1">Figma</li>
+      <li className="px-1">Adobe Premiere Pro</li>
+      <li className="px-1">Adobe Photoshop</li>
     </ul>
   </p>
 );
@@ -67,19 +68,19 @@ const help = (
   <p>
     <ul>
       <li>
-        <span className="text-cyan-400">help&emsp;</span>shows list of commands available
+        <span className="text-andromedacyan">help&emsp;</span>shows list of commands available
       </li>
       <li>
-        <span className="text-cyan-400">about&emsp;</span>about me
+        <span className="text-andromedacyan">about&emsp;</span>about me
       </li>
       <li>
-        <span className="text-cyan-400">skills&emsp;</span>shows my skills and the tools i use
+        <span className="text-andromedacyan">skills&emsp;</span>shows my skills and the tools i use
       </li>
       <li>
-        <span className="text-cyan-400">projects&emsp;</span>lists the projects i&apos;ve worked on
+        <span className="text-andromedacyan">projects&emsp;</span>lists the projects i&apos;ve worked on
       </li>
       <li>
-        <span className="text-cyan-400">links&emsp;</span>shows my social links
+        <span className="text-andromedacyan">links&emsp;</span>shows my social links
       </li>
     </ul>
   </p>
@@ -90,20 +91,20 @@ const links = (
     <span className="font-semibold">Links</span>
     <ul>
       <li>
-        <span className="text-cyan-400">Github:&nbsp;</span>]
+        <span className="text-andromedacyan">Github:&nbsp;</span>]
         <a className="hover:underline" href="https://github.com/vaibhavTekk">
           https://github.com/vaibhavTekk
         </a>
       </li>
       <li>
-        <span className="text-cyan-400">Instagram:&nbsp;</span>
+        <span className="text-andromedacyan">Instagram:&nbsp;</span>
 
         <a className="hover:underline" href="https://www.instagram.com/vaibhavtekk/">
           https://www.instagram.com/vaibhavtekk/
         </a>
       </li>
       <li>
-        <span className="text-cyan-400">LinkedIn:&nbsp;</span>
+        <span className="text-andromedacyan">LinkedIn:&nbsp;</span>
 
         <a className="hover:underline" href="https://github.com/vaibhavTekk">
           https://github.com/vaibhavTekk
@@ -122,35 +123,48 @@ const projects = (
         <p>A Simple Expense Tracker App</p>
         <p>made with React, TailwindCSS, Redux, Express, MongoDB</p>
         <span className="flex flex-row gap-2">
-          <a className="hover:underline bg-gray-700 p-1" href="https://github.com/vaibhavTekk/expense-tracker-frontend">
+          <a
+            className="hover:underline bg-andromedagreen text-andromedablack px-1"
+            href="https://github.com/vaibhavTekk/expense-tracker-frontend"
+          >
             Repo
           </a>
-          <a className="hover:underline bg-gray-700 p-1" href="https://wallt.vaibhavtekk.tech">
+          <a
+            className="hover:underline bg-andromedagreen text-andromedablack px-1"
+            href="https://wallt.vaibhavtekk.tech"
+          >
             Website
           </a>
         </span>
       </li>
-      <br />
       <li>
         <p className="font-bold underline">Lights CLI</p>
         <p>A CLI interface to control Tuya Powered LED smart bulb</p>
         <p>Made with Python, Typer and Tuya API</p>
         <span className="flex flex-row gap-2">
-          <a className="hover:underline bg-gray-700 p-1" href="https://github.com/vaibhavTekk/lights-cli">
+          <a
+            className="hover:underline bg-andromedagreen text-andromedablack px-1"
+            href="https://github.com/vaibhavTekk/lights-cli"
+          >
             Repo
           </a>
         </span>
       </li>
-      <br />
       <li>
         <p className="font-bold underline">Tic Tac Toe</p>
         <p>A Simple two player tic-tac-toe game</p>
         <p>Made with HTML, TailwindCSS and JS</p>
         <span className="flex flex-row gap-2">
-          <a className="hover:underline bg-gray-700 p-1" href="https://github.com/vaibhavTekk/tic-tac-toe-js">
+          <a
+            className="hover:underline bg-andromedagreen text-andromedablack px-1"
+            href="https://github.com/vaibhavTekk/tic-tac-toe-js"
+          >
             Repo
           </a>
-          <a className="hover:underline bg-gray-700 p-1" href="">
+          <a
+            className="hover:underline bg-andromedagreen text-andromedablack px-1"
+            href="http://tictac.vaibhavtekk.tech/"
+          >
             Website
           </a>
         </span>

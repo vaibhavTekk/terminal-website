@@ -9,8 +9,8 @@ function History() {
         return (
           <div key={e.date} className="whitespace-pre-wrap">
             <span>
-              <span className="text-green-400">guest@vaibhavtekk.tech</span>:<span className="text-blue-400">~</span>${" "}
-              {e.command}
+              <span className="text-andromedagreen">guest@vaibhavtekk.tech</span>:
+              <span className="text-andromedacyan">~</span>$ {e.command}
             </span>
             <br />
             {e.output}
