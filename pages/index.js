@@ -1,7 +1,7 @@
 import Head from "next/head";
 import History from "../components/History";
 import Input from "../components/Input";
-import Navbar from "../components/Navbar";
+
 import { HistoryProvider } from "../utils/HistoryProvider";
 
 export default function Home() {
