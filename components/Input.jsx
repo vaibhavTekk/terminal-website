@@ -1,4 +1,4 @@
-import React, { useState, useContext, useEffect } from "react";
+import React, { useState, useContext, useEffect, useRef } from "react";
 import { HistoryContext } from "../utils/HistoryProvider";
 import checkCommand from "../utils/Commands";
 
@@ -7,12 +7,14 @@ function Input() {
   const { history, setHistory } = useContext(HistoryContext);
   const [commandList, setCommandList] = useState([]);
   const [commandIndex, setCommandIndex] = useState(0);
+  const inputRef = useRef();
 
   useEffect(() => {
     if (history.length === 0) {
       const historyPayload = { date: new Date(), command: "header", output: checkCommand("header") };
       setHistory([...history, historyPayload]);
     }
+    inputRef.current.focus();
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
@@ -62,6 +64,7 @@ function Input() {
         <span>$</span>{" "}
       </span>
       <input
+        ref={inputRef}
         type="textarea"
         className="inline focus:outline-none bg-inherit w-1/2"
         value={input}

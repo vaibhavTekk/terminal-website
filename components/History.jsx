@@ -1,10 +1,13 @@
-import React, { useContext, useEffect } from "react";
+import React, { useContext, useEffect, useRef } from "react";
 
 import { HistoryContext } from "../utils/HistoryProvider";
 
 function History() {
   const { history } = useContext(HistoryContext);
-
+  const bottom = useRef();
+  useEffect(() => {
+    bottom.current.scrollIntoView({ behaviour: "smooth" });
+  });
   return (
     <div>
       {history.map((e) => {
@@ -19,6 +22,7 @@ function History() {
           </div>
         );
       })}
+      <div ref={bottom}></div>
     </div>
   );
 }
