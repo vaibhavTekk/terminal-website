@@ -100,21 +100,21 @@ const links = (
     <ul>
       <li>
         <span className="text-andromedacyan">Github:&nbsp;</span>]
-        <a className="hover:underline" href="https://github.com/vaibhavTekk">
+        <a target="_blank" rel="noreferrer" className="hover:underline" href="https://github.com/vaibhavTekk">
           https://github.com/vaibhavTekk
         </a>
       </li>
       <li>
         <span className="text-andromedacyan">Instagram:&nbsp;</span>
 
-        <a className="hover:underline" href="https://www.instagram.com/vaibhavtekk/">
+        <a target="_blank" rel="noreferrer" className="hover:underline" href="https://www.instagram.com/vaibhavtekk/">
           https://www.instagram.com/vaibhavtekk/
         </a>
       </li>
       <li>
         <span className="text-andromedacyan">LinkedIn:&nbsp;</span>
 
-        <a className="hover:underline" href="https://github.com/vaibhavTekk">
+        <a target="_blank" rel="noreferrer" className="hover:underline" href="https://github.com/vaibhavTekk">
           https://github.com/vaibhavTekk
         </a>
       </li>
@@ -132,12 +132,16 @@ const projects = (
         <p>made with React, TailwindCSS, Redux, Express, MongoDB</p>
         <span className="flex flex-row gap-2">
           <a
+            target="_blank"
+            rel="noreferrer"
             className="hover:underline bg-andromedagreen text-andromedablack px-1"
             href="https://github.com/vaibhavTekk/expense-tracker-frontend"
           >
             Repo
           </a>
           <a
+            target="_blank"
+            rel="noreferrer"
             className="hover:underline bg-andromedagreen text-andromedablack px-1"
             href="https://wallt.vaibhavtekk.tech"
           >
@@ -151,6 +155,8 @@ const projects = (
         <p>Made with Python, Typer and Tuya API</p>
         <span className="flex flex-row gap-2">
           <a
+            target="_blank"
+            rel="noreferrer"
             className="hover:underline bg-andromedagreen text-andromedablack px-1"
             href="https://github.com/vaibhavTekk/lights-cli"
           >
@@ -164,12 +170,16 @@ const projects = (
         <p>Made with HTML, TailwindCSS and JS</p>
         <span className="flex flex-row gap-2">
           <a
+            target="_blank"
+            rel="noreferrer"
             className="hover:underline bg-andromedagreen text-andromedablack px-1"
             href="https://github.com/vaibhavTekk/tic-tac-toe-js"
           >
             Repo
           </a>
           <a
+            target="_blank"
+            rel="noreferrer"
             className="hover:underline bg-andromedagreen text-andromedablack px-1"
             href="http://tictac.vaibhavtekk.tech/"
           >
