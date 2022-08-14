@@ -187,6 +187,29 @@ const projects = (
           </a>
         </span>
       </li>
+      <li>
+        <p className="font-bold underline">VIT Timetable Converter</p>
+        <p>A web app that converts VIT Timetable HTML to an ICS File</p>
+        <p>Made with NodeJS, Express, HTML, TailwindCSS, JS</p>
+        <span className="flex flex-row gap-2">
+          <a
+            target="_blank"
+            rel="noreferrer"
+            className="hover:underline bg-andromedagreen text-andromedablack px-1"
+            href="https://github.com/vaibhavTekk/tic-tac-toe-js"
+          >
+            Repo
+          </a>
+          <a
+            target="_blank"
+            rel="noreferrer"
+            className="hover:underline bg-andromedagreen text-andromedablack px-1"
+            href="http://tictac.vaibhavtekk.tech/"
+          >
+            Website
+          </a>
+        </span>
+      </li>
     </ul>
   </p>
 );
