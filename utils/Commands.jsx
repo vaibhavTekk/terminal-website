@@ -196,7 +196,7 @@ const projects = (
             target="_blank"
             rel="noreferrer"
             className="hover:underline bg-andromedagreen text-andromedablack px-1"
-            href="https://github.com/vaibhavTekk/tic-tac-toe-js"
+            href="https://github.com/vaibhavTekk/vit-timetable-parser-2"
           >
             Repo
           </a>
@@ -204,7 +204,7 @@ const projects = (
             target="_blank"
             rel="noreferrer"
             className="hover:underline bg-andromedagreen text-andromedablack px-1"
-            href="http://tictac.vaibhavtekk.tech/"
+            href="https://vit-timetable.herokuapp.com/"
           >
             Website
           </a>
