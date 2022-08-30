@@ -127,6 +127,29 @@ const projects = (
     <span>Projects : </span>
     <ul>
       <li>
+        <p className="font-bold underline">VIT Timetable Converter</p>
+        <p>A web app that converts VIT Timetable HTML to an ICS File</p>
+        <p>Made with NodeJS, Express, HTML, TailwindCSS, JS</p>
+        <span className="flex flex-row gap-2">
+          <a
+            target="_blank"
+            rel="noreferrer"
+            className="hover:underline bg-andromedagreen text-andromedablack px-1"
+            href="https://github.com/vaibhavTekk/vit-timetable-parser-2"
+          >
+            Repo
+          </a>
+          <a
+            target="_blank"
+            rel="noreferrer"
+            className="hover:underline bg-andromedagreen text-andromedablack px-1"
+            href="https://vit-timetable.herokuapp.com/"
+          >
+            Website
+          </a>
+        </span>
+      </li>
+      <li>
         <p className="font-bold underline">Wallt</p>
         <p>A Simple Expense Tracker App</p>
         <p>made with React, TailwindCSS, Redux, Express, MongoDB</p>
@@ -187,29 +210,7 @@ const projects = (
           </a>
         </span>
       </li>
-      <li>
-        <p className="font-bold underline">VIT Timetable Converter</p>
-        <p>A web app that converts VIT Timetable HTML to an ICS File</p>
-        <p>Made with NodeJS, Express, HTML, TailwindCSS, JS</p>
-        <span className="flex flex-row gap-2">
-          <a
-            target="_blank"
-            rel="noreferrer"
-            className="hover:underline bg-andromedagreen text-andromedablack px-1"
-            href="https://github.com/vaibhavTekk/vit-timetable-parser-2"
-          >
-            Repo
-          </a>
-          <a
-            target="_blank"
-            rel="noreferrer"
-            className="hover:underline bg-andromedagreen text-andromedablack px-1"
-            href="https://vit-timetable.herokuapp.com/"
-          >
-            Website
-          </a>
-        </span>
-      </li>
+      
     </ul>
   </p>
 );
